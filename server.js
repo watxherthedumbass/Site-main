@@ -1,14 +1,14 @@
 var express = require('express');
 var app = express();
-var parser = require('body-parser');
-var encoded = parser.urlencoded( {extended: false})
+var bodyParser = require('body-parser');
+var urlencodedParser = parser.urlencoded( {extended: false})
 app.use(express.static('site'));
 
 app.get('/', function (req, res) {
-   res.send('Hello World');
+   res.sendFile('index.html');
 })
 
-app.post('/site/process-post', encoded, function (req, res) {
+app.post('/site/process-post', urlencodedParser, function (req, res) {
    response = {
       name:req.body.name
    };
