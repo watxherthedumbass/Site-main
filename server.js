@@ -13,7 +13,7 @@ app.post('/', urlencodedParser, function (req, res) {
       name:req.body.name
    };
    console.log(response);
-   res.sendFile('site/index.html');
+   res.sendFile(path.join(__dirname, "site", "index.html");
 })
 
 var server = app.listen(8080, function () {
