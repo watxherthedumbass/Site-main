@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
    res.sendFile('index.html');
 })
 
-app.post('/site/process_post.html', urlencodedParser, function (req, res) {
+app.post('process_post', urlencodedParser, function (req, res) {
    response = {
       name:req.body.name
    };
