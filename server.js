@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
    res.send('Hello World');
 })
 
-app.post('/process-post', encoded, function (req, res) {
+app.post('/site/process-post', encoded, function (req, res) {
    response = {
       name:req.body.name
    };
