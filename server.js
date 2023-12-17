@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
 app.post('/', urlencodedParser, function (req, res) {
    mailOptions = {
    from: 'jar83957@gmail.com',
-   to: 'jar83957@gmail.com',
+   to: 'jarrenzuniga2@gmail.com',
    subject: `review from ${req.body.name}`,
    text: `review: ${req.body.txt}`
 };
