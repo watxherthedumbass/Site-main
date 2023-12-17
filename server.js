@@ -13,7 +13,7 @@ app.post('/', urlencodedParser, function (req, res) {
       name:req.body.name
    };
    console.log(response);
-   res.send("hello", $(req.body.name));
+   res.send(`hello ${req.body.name}`);
 })
 
 var server = app.listen(8080, function () {
