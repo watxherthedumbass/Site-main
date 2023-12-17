@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var urlencodedParser = parser.urlencoded( {extended: false})
+var urlencodedParser = BodyParser.urlencoded( {extended: false})
 app.use(express.static('site'));
 
 app.get('/', function (req, res) {
