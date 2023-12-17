@@ -13,7 +13,7 @@ app.post('/', urlencodedParser, function (req, res) {
       name:req.body.name
    };
    console.log(response);
-   res.end(JSON.stringify(response));
+   res.sendFile('index.html');
 })
 
 var server = app.listen(8080, function () {
